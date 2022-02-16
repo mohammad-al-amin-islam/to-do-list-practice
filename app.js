@@ -5,6 +5,7 @@ document.getElementById('add-btn').addEventListener('click', function () {
     const inputValue = document.getElementById('input-value').value;
     if (inputValue == "") {
         alert('enter correct input');
+        return;
     }
     const tr = document.createElement('tr');
     tr.innerHTML = `
